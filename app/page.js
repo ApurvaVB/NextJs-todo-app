@@ -87,6 +87,7 @@ export default function Home() {
           placeholder="Enter Description"
           className="px-3 py-2 border-2 w-full"
         />
+        
         <button type="submit" className="bg-orange-600 py-3 px-11 text-white">
           Add Task
         </button>
