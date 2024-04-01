@@ -5,7 +5,9 @@ import TodoModel from "@/lib/models/TodoModel";
 const LoadDb = async () => {
   await ConnectDB();
 };
+
 LoadDb();
+
 export async function GET(request) {
   const todos = await TodoModel.find({});
   return NextResponse.json({ todos: todos });
